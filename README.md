@@ -9,4 +9,4 @@
 ## 快速使用
 内网环境下通过IntelliJ IDEA工具OPEN项目，等待Maven下载即可。
 
-# Hyperchain-Score-Hella
+

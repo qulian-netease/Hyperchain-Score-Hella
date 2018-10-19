@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1591bd76-608b-43f6-b279-1ffee925b394" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/lib/fastjson-1.2.47.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/hyperchain/application/contract/invoke/ContractInvoke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/hyperchain/application/contract/invoke/ContractInvoke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/hyperchain/application/controller/ContractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/hyperchain/application/controller/ContractController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hyperchain.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hyperchain.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,6 +91,7 @@
     <session id="-178197013">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -103,6 +100,7 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="JAVA" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
@@ -114,6 +112,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
+          <entry key="gitignore" value="1" />
           <entry key="java" value="2" />
           <entry key="properties" value="1" />
         </counts>
@@ -152,7 +151,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/hyperchain/application/common/response/BaseResultFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -161,11 +160,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/hyperchain/application/controller/ContractController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="263">
-              <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
+              <caret line="191" selection-start-line="191" selection-end-line="191" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -252,6 +251,7 @@
       <find>addGood</find>
       <find>null</find>
       <find>trans</find>
+      <find>buy</find>
       <find>transfer</find>
     </findStrings>
     <replaceStrings>
@@ -447,7 +447,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539941595178" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539946391286" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -621,9 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -683,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hyperchain/application/common/response/BaseResultFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/hyperchain/application/contract/invoke/ContractInvoke.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -715,10 +705,20 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/hyperchain/application/controller/ContractController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
-          <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
+          <caret line="191" selection-start-line="191" selection-end-line="191" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hyperchain/application/common/response/BaseResultFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
         </state>
       </provider>
     </entry>
