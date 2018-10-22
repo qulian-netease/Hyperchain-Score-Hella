@@ -35,8 +35,8 @@ public class Swagger2 {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Ethreum")
-                .description("积分系统Java")
+                .title("Hyperchain-Score-Hella")
+                .description("基于Hyperchain开发者平台和区块链技术的数字积分系统")
                 .termsOfServiceUrl("暂无")
                 .version("1.0")
                 .build();

@@ -8,3 +8,4 @@ bin
 log
 .settings
 .vscode
+.DS_Store
