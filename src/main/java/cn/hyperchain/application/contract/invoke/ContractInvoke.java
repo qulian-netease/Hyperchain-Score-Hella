@@ -38,6 +38,9 @@ public class ContractInvoke {
         //arrFunParamReal[0] = new FuncParamReal("address", address);
         GetTxReciptReturn getTxReciptReturn = null;
         try {
+            /**
+             * 同步调用合约，返回结果放入getTxReciptReturn中
+             */
             getTxReciptReturn = api.invokesyncContract(
                     token,
                     false,
@@ -52,6 +55,9 @@ public class ContractInvoke {
         }
 
         BaseResult baseResult = null;
+        /**
+         * 对getTxReciptReturn进行解析
+         */
 
         if (FLAG_OK.equals(getTxReciptReturn.getStatus())) {
             try {
@@ -73,10 +79,6 @@ public class ContractInvoke {
                     baseResult.setCode(Code.INVOKE_FAIL.getCode());
                     baseResult.setMessage("登录失败");
                 }
-
-//                baseResult = BaseResultFactory.produceResult(
-//                        Code.SUCCESS,
-//                        FunctionDecode.resultDecode("getOwner", ContractUtils.getAbi(), getTxReciptReturn.getRet()));
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
@@ -331,50 +333,6 @@ public class ContractInvoke {
 
         return baseResult;
     }
-
-    /**
-     * 客户查询当前账户
-     */
-//    public BaseResult getCurrentCustomer(String token, String invokeAddress, String currentAccount) {
-//        //构造参数
-//        FuncParamReal[] arrFunParamReal = new FuncParamReal[1];
-//        arrFunParamReal[0] = new FuncParamReal("address", currentAccount);
-//        GetTxReciptReturn getTxReciptReturn = null;
-//        try {
-//            getTxReciptReturn = api.invokesyncContract(
-//                    token,
-//                    false,
-//                    invokeAddress,
-//                    ContractUtils.getContractAddress(),
-//                    ContractUtils.getAbi(),
-//                    "getCurrentCustomer",
-//                    null//arrFunParamReal
-//            );
-//        } catch (IOException | TxException | InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        BaseResult baseResult = null;
-//
-//        if (FLAG_OK.equals(getTxReciptReturn.getStatus())) {
-//            try {
-//                baseResult = BaseResultFactory.produceResult(
-//                        Code.SUCCESS,
-//                        FunctionDecode.resultDecode("getCurrentCustomer", ContractUtils.getAbi(), getTxReciptReturn.getRet()));
-//            } catch (UnsupportedEncodingException e) {
-//                e.printStackTrace();
-//            }
-//        } else {
-//            try {
-//                baseResult = BaseResultFactory.produceResult(
-//                        Code.INVOKE_FAIL,
-//                        FunctionDecode.resultDecode("getCurrentCustomer", ContractUtils.getAbi(), getTxReciptReturn.getRet()));
-//            } catch (UnsupportedEncodingException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        return baseResult;
-//    }
 
     /**
      * 客户查询当前余额
@@ -646,9 +604,6 @@ public class ContractInvoke {
                     baseResult.setCode(Code.INVOKE_FAIL.getCode());
                     baseResult.setMessage("登录失败");
                 }
-//                baseResult = BaseResultFactory.produceResult(
-//                        Code.SUCCESS,
-//                        FunctionDecode.resultDecode("getMerchantPassword", ContractUtils.getAbi(), getTxReciptReturn.getRet()));
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
@@ -664,50 +619,6 @@ public class ContractInvoke {
 
         return baseResult;
     }
-
-    /**
-     * 查询当前商户
-     */
-//    public BaseResult getCurrentMerchant(String token, String invokeAddress, String currentAccount) {
-//        //构造参数
-//        FuncParamReal[] arrFunParamReal = new FuncParamReal[1];
-//        arrFunParamReal[0] = new FuncParamReal("address", currentAccount);
-//        GetTxReciptReturn getTxReciptReturn = null;
-//        try {
-//            getTxReciptReturn = api.invokesyncContract(
-//                    token,
-//                    false,
-//                    invokeAddress,
-//                    ContractUtils.getContractAddress(),
-//                    ContractUtils.getAbi(),
-//                    "getCurrentMerchant",
-//                    arrFunParamReal
-//            );
-//        } catch (IOException | TxException | InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        BaseResult baseResult = null;
-//
-//        if (FLAG_OK.equals(getTxReciptReturn.getStatus())) {
-//            try {
-//                baseResult = BaseResultFactory.produceResult(
-//                        Code.SUCCESS,
-//                        FunctionDecode.resultDecode("getCurrentMerchant", ContractUtils.getAbi(), getTxReciptReturn.getRet()));
-//            } catch (UnsupportedEncodingException e) {
-//                e.printStackTrace();
-//            }
-//        } else {
-//            try {
-//                baseResult = BaseResultFactory.produceResult(
-//                        Code.INVOKE_FAIL,
-//                        FunctionDecode.resultDecode("getCurrentMerchant", ContractUtils.getAbi(), getTxReciptReturn.getRet()));
-//            } catch (UnsupportedEncodingException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        return baseResult;
-//    }
 
     /**
      * 根据商户address获取积分余额

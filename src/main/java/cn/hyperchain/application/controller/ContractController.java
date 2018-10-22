@@ -112,19 +112,6 @@ public class ContractController {
         return contractInvoke.customerLogin(token, invokeAddress, customerLoginAddr,customerLoginPwd);
     }
 
-    /**
-     * 当前客户
-     *
-     * @param currentAccount 当前账户地址
-     * @return
-     */
-//    @ApiOperation(value = "当前客户", notes = "积分系统")
-//    @RequestMapping(value = "/v2/getCurrentCustomer", method = RequestMethod.POST)
-//    public BaseResult getCurrentCustomer(@ApiParam(value = "accessToken") @RequestParam String token,
-//                                             @ApiParam(value = "调用者账户地址") @RequestParam String invokeAddress,
-//                                             @ApiParam(value = "当前账户地址") @RequestParam String currentAccount) {
-//        return contractInvoke.getCurrentCustomer(token, invokeAddress, currentAccount);
-//    }
 
     /**
      * 当前余额
@@ -224,19 +211,6 @@ public class ContractController {
         return contractInvoke.merchantLogin(token, invokeAddress, merchantLoginAddr,merchantLoginPwd);
     }
 
-    /**
-     * 当前商户
-     *
-     * @param currentAccount 当前账户地址
-     * @return
-     */
-//    @ApiOperation(value = "当前商户", notes = "积分系统")
-//    @RequestMapping(value = "/v3/getCurrentMerchant", method = RequestMethod.POST)
-//    public BaseResult getCurrentMerchant(@ApiParam(value = "accessToken") @RequestParam String token,
-//                                         @ApiParam(value = "调用者账户地址") @RequestParam String invokeAddress,
-//                                         @ApiParam(value = "当前账户地址") @RequestParam String currentAccount) {
-//        return contractInvoke.getCurrentMerchant(token, invokeAddress, currentAccount);
-//    }
 
     /**
      * 当前余额
