@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="fastjson-1.2.47">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lib/fastjson-1.2.47.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lib/qsnarksdk-1.0-SNAPSHOT-jar-with-dependencies.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lib/qsnarksdk-1.0-SNAPSHOT-jar-with-dependencies.jar!/" />
+    </SOURCES>
+  </library>
+</component>
